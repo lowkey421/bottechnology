@@ -7,14 +7,15 @@
   <script src="https://unpkg.com/webamp@latest/built/webamp.bundle.min.js"></script>
 
   <style>
-    .side-gif {
-        position: fixed;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 150px;   /* adjust size */
-        height: auto;   /* keeps aspect ratio */
-        z-index: 10;    /* ensures it sits above background */
-      }
+   .side-gif {
+      position: fixed;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 120px;
+      height: 600px;   /* makes it very tall (1:5-ish) */
+      object-fit: fill; /* IMPORTANT: forces distortion/stretch */
+      z-index: 10;
+    }
 
     .left {
       left: 20px;     /* distance from left edge */
