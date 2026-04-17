@@ -7,6 +7,23 @@
   <script src="https://unpkg.com/webamp@latest/built/webamp.bundle.min.js"></script>
 
   <style>
+    .side-gif {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 150px;   /* adjust size */
+        height: auto;   /* keeps aspect ratio */
+        z-index: 10;    /* ensures it sits above background */
+      }
+
+    .left {
+      left: 20px;     /* distance from left edge */
+    }
+
+    .right {
+      right: 20px;    /* distance from right edge */
+    }
+    
     body {
       margin: 0;
       height: 100vh;
@@ -43,6 +60,9 @@
     My Webamp Player
   </header>
 
+  <img src="./pics/left_smiley.gif" class="side-gif left">
+  <img src="./pics/right_smiley.gif" class="side-gif right">
+  
   <div id="main">
     <div id="app"></div>
   </div>
